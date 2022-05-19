@@ -5,14 +5,17 @@
         <flipcard-back slot="back" />
         <flipcard-front slot="front" />
       </app-flipcard>
-
+</div>
       <!-- <app-flipcard>
         <flipcard-front slot="front"/>
       </app-flipcard> -->
+          <img alt="Vue logo" src="./assets/logo.png">
+          <div class="wrapper-card">
+    <app-test/>
     </div>
     <img alt="Vue logo" src="./assets/logo.png">
-    <app-test/>
-    <img alt="Vue logo" src="./assets/logo.png">
+    
+
   </div>
 </template>
 

@@ -1,7 +1,7 @@
 <template>
-    <div>
-        <span>im the front</span>
-        <button id="front" @click="$parent.$emit('cardclicked',$event.target.id)">Front button</button>
+    <div class="flex-col">
+        <h2>im the front</h2>
+        <button class="btn" id="front" @click="$parent.$emit('cardclicked')">Front button</button>
     </div>
 </template>
 
@@ -11,6 +11,15 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
+.flex-col{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.btn{
+    width: fit-content;
+}
 </style>
