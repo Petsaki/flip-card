@@ -21,5 +21,6 @@ export default {
 
 .btn{
     width: fit-content;
+    cursor: pointer;
 }
 </style>

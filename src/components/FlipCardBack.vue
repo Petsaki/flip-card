@@ -1,13 +1,11 @@
 <template>
 <div>
-    <div class="flex-row-end">
+    <div class="flex-row-between">
+        <h2 class="block-inline">im the back</h2>
         <button class="btn-x" @click="$parent.$emit('cardclicked')">✕</button>
     </div>
-    <div class="flex-col">
-        <h2>im the back</h2>
-        <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nihil minima, assumenda quisquam doloribus consequuntur sunt sequi eaque incidunt, quaerat aliquam laborum possimus esse nisi consectetur nesciunt. Eos, explicabo vel.
-        Distinctio fugit reprehenderit ipsum ipsam. Eum similique in rerum, sunt iusto, fugit, perspiciatis repudiandae dolore eveniet maxime inventore illo quibusdam. Deserunt nulla id quasi, neque nisi obcaecati sint et porro?</span>
-    </div>
+    <span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, nihil minima, assumenda quisquam doloribus consequuntur sunt sequi eaque incidunt, quaerat aliquam laborum possimus esse nisi consectetur nesciunt. Eos, explicabo vel.
+    Distinctio fugit reprehenderit ipsum ipsam. Eum similique in rerum, sunt iusto, fugit, perspiciatis repudiandae dolore eveniet maxime inventore illo quibusdam. Deserunt nulla id quasi, neque nisi obcaecati sint et porro?</span>
 
 </div>
 </template>
@@ -19,15 +17,17 @@ export default {
 </script>
 
 <style scoped>
-.flex-col{
-    position: relative;
-    display: flex;
-    flex-flow: column;
+
+.block-inline{
+    display: inline-block;
 }
 
-.flex-row-end{
+.flex-row-between{
+    padding: 0 .75rem;
+    box-sizing: border-box;
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
+    width: 100%;
 }
 .btn-x{
     background-color: transparent;
@@ -37,6 +37,6 @@ export default {
     font-size: 1.2rem;
     padding: 0;
     margin: 0;
-    line-height: .5rem;
+    line-height: 1rem;
 }
 </style>

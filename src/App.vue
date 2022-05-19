@@ -1,17 +1,18 @@
 <template>
   <div id="app">
+    <img alt="Vue logo" src="./assets/logo.png">
     <div class="wrapper-card">
       <app-flipcard>
         <flipcard-back slot="back" />
         <flipcard-front slot="front" />
       </app-flipcard>
-</div>
-      <!-- <app-flipcard>
-        <flipcard-front slot="front"/>
-      </app-flipcard> -->
-          <img alt="Vue logo" src="./assets/logo.png">
-          <div class="wrapper-card">
-    <app-test/>
+    </div>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <div class="wrapper-card">
+      <app-flipcard>
+        <flipcard-back slot="back" />
+        <flipcard-front slot="front" />
+      </app-flipcard>
     </div>
     <img alt="Vue logo" src="./assets/logo.png">
     
@@ -21,7 +22,6 @@
 
 <script>
 import AppFlipCard from './components/AppFlipCard.vue'
-import AppTest from './components/test.vue'
 import FlipCardBack from './components/FlipCardBack.vue'
 import FlipCardFront from './components/FlipCardFront.vue'
 
@@ -31,7 +31,6 @@ export default {
     'app-flipcard': AppFlipCard,
     'flipcard-back': FlipCardBack,
     'flipcard-front': FlipCardFront,
-    'app-test': AppTest,
   },
   methods:{
   }
